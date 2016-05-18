@@ -285,6 +285,13 @@ ul#nav li.current a { color: #F06000; }
 /*	Skill Bars
 /*----------------------------------------------*/
 
+#skills {
+   background: #fff;
+   padding-top: 0px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
 .bars {
 	width: 95%;
 	float: left;
@@ -325,85 +332,45 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+.skill-1 {
+  	width: 95%;
+  	-moz-animation: skill-95 2s ease;
+  	-webkit-animation: skill-95 2s ease;
 }
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+.skill-2 {
+  	width: 95%;
+  	-moz-animation: skill-95 2s ease;
+  	-webkit-animation: skill-95 2s ease;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.skill-3 {
+  	width: 95%;
+  	-moz-animation: skill-95 2s ease;
+  	-webkit-animation: skill-95 2s ease;
 }
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+.skill-4 {
+  	width: 95%;
+  	-moz-animation: skill-95 2s ease;
+  	-webkit-animation: skill-95 2s ease;
 }
-.html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+.skill-5 {
+  	width: 95%;
+  	-moz-animation: skill-95 2s ease;
+  	-webkit-animation: skill-95 2s ease;
 }
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
-}
-
-@-moz-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+.skill-6 {
+  	width: 95%;
+  	-moz-animation: skill-95 2s ease;
+  	-webkit-animation: skill-95 2s ease;
 }
 
-@-webkit-keyframes photoshop {
+@-moz-keyframes skill-95 {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 95%;  }
 }
-@-webkit-keyframes illustrator {
+
+@-webkit-keyframes skill-95 {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 95%;  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -523,7 +490,7 @@ ul#nav li.current a { color: #F06000; }
 	position: relative;
 	margin: 0 auto;
 }
-.popup-modal .img-description-box { text-align: center; }
+.popup-modal .img-description-box { text-align: center; padding: 15px 0 0 0; }
 .popup-modal .description-box { padding: 12px 36px 18px 36px; }
 .popup-modal .description-box > ul { list-style: circle; }
 .popup-modal .description-box h4 {
