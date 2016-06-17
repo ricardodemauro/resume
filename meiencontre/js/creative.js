@@ -90,10 +90,4 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
-    var finalDate = new Date(2016, 9, 1, 0, 0, 0, 0);
-    $('div#clock').countdown(finalDate, {
-        elapse: false,
-        precision: 1000
-    })
-
 })(jQuery); // End of use strict
