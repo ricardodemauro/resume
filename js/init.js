@@ -99,9 +99,9 @@ jQuery(document).ready(function($) {
         autoResize: true,
         shape: 'elliptic',
         fontSize: {
-    from: 0.1,
-    to: 0.02
-  }
+            from: 0.1,
+            to: 0.02
+        }
     });
 });
 
