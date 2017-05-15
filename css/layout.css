@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/bg1.png) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -66,7 +66,7 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #838C95;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -95,7 +95,7 @@ header .social li {
    padding: 0;
 }
 header .social li a { color: #fff; }
-header .social li a:hover { color: #11ABB0; }
+header .social li a:hover { color: #525252; }
 
 /* scrolldown link */
 header .scrolldown a {
@@ -117,7 +117,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #11ABB0; }
+header .scrolldown a:hover { color: #525252; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -161,21 +161,18 @@ ul#nav li {
 
 /* Links */
 ul#nav li a {
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
 
-/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-
-   display: inline-block;
-   padding: 8px 13px;
-   line-height: 32px;
-	text-decoration: none;
-   text-align: left;
-   color: #fff;
-
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
 }
 
 ul#nav li a:active { background-color: transparent !important; }
@@ -193,8 +190,13 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
+#about ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #11ABB0; }
+#about a:hover, #about a:focus { color: #303030; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
@@ -203,7 +205,8 @@ ul#nav li.current a { color: #F06000; }
 }
 #about p {
    line-height: 30px;
-   color: #7A7A7A;
+   /*color: #7A7A7A;*/
+   color: #838C95;
 }
 #about .profile-pic {
    position: relative;
@@ -286,21 +289,19 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
-/*----------------------------------------------*/
-/*	Skill Bars
-/*----------------------------------------------*/
+/* Skill Bars */
 
 #skills {
-   background: #f5f5f5;
-   padding-top: 90px;
+   padding-top: 75px;
+   padding-bottom: 25px;
    overflow: hidden;
+   background: #2B2B2B;
 }
 
 div.skills-cloud {
     margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
+    width: 95%;
+    height: 500px;
 }
 
 #skills h1 {
@@ -313,12 +314,12 @@ div.skills-cloud {
 
 /* e. Portfolio Section */
 
-#portfolio {
+#certifications {
    background: #ebeeee;
-   padding-top: 90px;
+   padding-top: 75px;
    padding-bottom: 60px;
 }
-#portfolio h1 {
+#certifications h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -698,10 +699,6 @@ call-to-action .button {
     cursor: default;
 }
 
-/* ------------------------------------------------------------------ */
-/* h. Contact Section
-/* ------------------------------------------------------------------ */
-
 #contact {
    background: #191919;
    padding-top: 96px;
@@ -742,30 +739,27 @@ call-to-action .button {
    padding-right: 3%;
 }
 #contact .header-col { padding-top: 6px; }
-
-
-/* contact form */
 #contact form { margin-bottom: 30px; }
 #contact label {
-   font: 15px/24px 'opensans-bold', sans-serif;
-   margin: 12px 0;
-   color: #EBEEEE;
-	display: inline-block;
-	float: left;
-   width: 26%;
+    font: 15px/24px 'opensans-bold', sans-serif;
+    margin: 12px 0;
+    color: #EBEEEE;
+    display: inline-block;
+    float: left;
+    width: 26%;
 }
 #contact input,
 #contact textarea,
 #contact select {
-   padding: 18px 20px;
-	color: #eee;
-	background: #373233;
-	margin-bottom: 42px;
-	border: 0;
-	outline: none;
-   font-size: 15px;
-   line-height: 24px;
-   width: 65%;
+    padding: 18px 20px;
+    color: #eee;
+    background: #373233;
+    margin-bottom: 42px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    width: 65%;
 }
 #contact input:focus,
 #contact textarea:focus,
@@ -774,16 +768,16 @@ call-to-action .button {
 	background-color: #11ABB0;
 }
 #contact button.submit {
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	color:#fff;
-   background: #0D0D0D;
-	border: none;
-   cursor: pointer;
-   height: auto;
-   display: inline-block;
-	border-radius: 3px;
-   margin-left: 26%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#fff;
+    background: #0D0D0D;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 26%;
 }
 #contact button.submit:hover {
 	color: #0D0D0D;
@@ -798,8 +792,8 @@ call-to-action .button {
 	background: #0F0F0F;
 	padding: 24px 24px;
 	margin-bottom: 36px;
-   width: 65%;
-   margin-left: 26%;
+    width: 65%;
+    margin-left: 26%;
 }
 #message-warning { color: #D72828; }
 #message-success { color: #11ABB0; }
@@ -833,11 +827,6 @@ call-to-action .button {
    color: #474747 !important;
    border: none;
 }
-
-
-/* ------------------------------------------------------------------ */
-/* i. Footer
-/* ------------------------------------------------------------------ */
 
 footer {
    padding-top: 48px;
@@ -918,4 +907,3 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
-

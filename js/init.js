@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
         autoResize: true,
         shape: 'elliptic',
         fontSize: {
-            from: 0.1,
+            from: 0.08,
             to: 0.02
         }
     });
