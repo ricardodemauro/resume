@@ -83,6 +83,10 @@ jQuery(document).ready(function($) {
        
     });*/
 
+    $('.item-wrap a').click(function(e){
+        e.preventDefault();
+    });
+
     $(document).on('click', '.popup-modal-dismiss', function (e) {
         e.preventDefault();
         $.magnificPopup.close();
